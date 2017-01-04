@@ -1,0 +1,100 @@
+/**
+ * @description
+ * @author liangxiao
+ * @update 2015-07-02 liangxiao
+ */
+
+
+/* body */
+body {
+    font-size: 12px;
+    line-height: 1;
+    font-family:"\5FAE\8F6F\96C5\9ED1",Helvetica,STHeiTi,sans-seri;
+    color: #333333;
+}
+
+textarea::-webkit-scrollbar {
+    width: 2px;
+}
+
+/*input,button,textarea {
+    font-family: microsoft yahei;
+}*/
+
+input::-webkit-text-cancel-button{
+    display: none;
+}
+
+input::-ms-clear{
+    display: none;
+}
+
+/* link */
+a {
+    text-decoration: none;
+}
+a:visited,a:link {
+    outline: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+
+/* 清除浮动 */
+.global-clearfix:after{
+    content:'.';
+    display:block;
+    visibility:hidden;
+    height:0;
+    line-height:0;
+    font-size:0;
+    clear:both;
+}
+.global-clearfix{
+    zoom:1;
+}
+
+
+/* 浮动 */
+.global-fl,
+.global-fr {
+    float:left;
+    display:inline;
+}
+.global-fr {
+    float:right;
+}
+
+
+.global-clear-spacing {
+    letter-spacing: -6px;
+}
+.global-clear-spacing * {
+    letter-spacing: normal;
+}
+
+
+.global-substring {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+    border:1px solid #B3B2B2;
+    background-color: #D3D3D3;
+    -webkit-border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color:#B3B2B2;
+    -webkit-border-radius:5px;
+}

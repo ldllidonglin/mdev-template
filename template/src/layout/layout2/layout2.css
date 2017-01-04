@@ -1,0 +1,28 @@
+html,body {
+    text-align: center;
+    width: 100%;
+}
+
+#doc {
+    width: 100%;
+    min-width: 1200px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+#bd {
+    width: 1200px;
+    margin: 41px auto 0px auto;
+}
+
+#main {
+    width: 1200px;
+    margin: 0 auto;
+    float: right;
+}
+
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+    clear: both;
+}

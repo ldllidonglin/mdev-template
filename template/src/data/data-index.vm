@@ -1,0 +1,21 @@
+#set($home-main-list = [
+    {
+        "yesterday": $!{ctx.stat.yesterday}
+    }
+])
+
+#set($user-msg-list = [
+    {
+        "user-info": $!{ctx.expert}
+    }
+])
+
+#set($head-list =[
+    {
+        "name": $!{ctx.user.nick}
+    }
+])
+#set($sidebar-list = [{
+    "currentTab": "home"
+}])
+#set($footer-list = [])

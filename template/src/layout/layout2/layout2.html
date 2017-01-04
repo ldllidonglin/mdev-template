@@ -1,0 +1,44 @@
+#*
+  this page layout as follow diagram:
+  ----------------------------------------
+  |              hdModules               |
+  ----------------------------------------
+  |              mainModules          |
+  ----------------------------------------
+  |              ftModules               |
+  ----------------------------------------
+  ----------------------------------------
+  |            outsideModules            |
+  ----------------------------------------
+*#
+
+## 配置css, js
+#set($resource = {
+    "css": [
+        "./layout2"
+    ],
+    "js": []
+})
+
+<div id="doc">
+    <div id="hd">
+        <!-- hd modules -->
+        #parseModules($hdModules)
+        <!-- hd modules end -->
+    </div>
+    <div id="bd" class="global-clearfix">
+        <div id="main">
+            <!-- main modules -->
+            #parseModules($mainModules)
+            <!-- main modules end -->
+        </div>
+        <div class="footer">
+            <!-- footer modules -->
+            #parseModules($ftModules)
+            <!-- footer modules -->
+        </div>
+    </div>
+</div>
+<!-- out of page modules -->
+#parseModules($outsideModules)
+<!-- out of page modules end -->

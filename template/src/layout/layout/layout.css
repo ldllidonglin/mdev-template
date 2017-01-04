@@ -1,0 +1,49 @@
+html,body {
+    text-align: center;
+    width: 100%;
+}
+
+#doc {
+    width: 100%;
+    min-width: 1200px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+#bd {
+    width: 1200px;
+    margin: 40px auto 0px auto;
+}
+
+#main {
+    float: right;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-left: -245px;
+}
+
+#main .min-height-wraper {
+    float: none;
+    width: auto;
+    margin-left: 245px;
+    background-color: #f1f1f1;
+    padding: 0px 0px 0px 10px;
+}
+
+.min-height {
+    min-height: 1050px;
+    background-color: #fff;
+}
+
+.sidebar {
+    float: left;
+    width: 245px;
+    background-color: #f1f1f1;
+}
+
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+    clear: both;
+}

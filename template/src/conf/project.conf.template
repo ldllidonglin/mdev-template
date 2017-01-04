@@ -1,0 +1,25 @@
+## 工程渲染模式
+##   online   -> js merged and compressed, css merged and compressed
+##   test     -> js merged, css merged
+##   debug-ie -> js unprocessed, css merged
+##   debug    -> js unprocessed, css unprocessed
+
+#set($renderMode = "debug-ie")
+#set($renderMode = "online")
+#set($renderMode = "test")
+#set($renderMode = "debug")
+
+
+## 渲染类型 [ server | client ]
+#set($pageRender = "server")
+#set($pageRender = "client")
+
+
+## 渲染优化 [ Normal | BigPipe | BigRender ]
+#set($renderOptimize = "BigRender")
+#set($renderOptimize = "BigPipe")
+#set($renderOptimize = "Normal")
+
+
+## 静态资源地址
+#set($resourceURL = "/resource/")
